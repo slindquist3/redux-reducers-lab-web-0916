@@ -5,8 +5,8 @@ import { transformFileSync } from 'babel-core';
 
 
 before(function(done) {
-  const src = path.resolve(__dirname, '..', './src/index.js');
-  const babelResult = transformFileSync(src, {
+const src = path.resolve(__dirname, '..', './src/reducers/index.js');
+const babelResult = transformFileSync(src, {
     presets: ['es2015']
   });
   const html = path.resolve(__dirname, '..', '/index.html');
